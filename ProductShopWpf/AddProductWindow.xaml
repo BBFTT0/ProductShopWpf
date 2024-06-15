@@ -1,0 +1,26 @@
+﻿<Window x:Class="ProductShopWpf.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductShopWpf"
+        mc:Ignorable="d"
+        Title="Добавление товара" Height="250" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Наименование: " Grid.Row="0"/>
+        <TextBox x:Name="titleTextBox" Grid.Row="0" Margin="100 0 0 0"/>
+        <Label Content="Описание: " Grid.Row="1" />
+        <TextBox x:Name="discriptionTextBox" Grid.Row="1" Margin="100 0 0 0"/>
+        <Label Content="Цена: " Grid.Row="2" />
+        <TextBox x:Name="priceTextBox" Grid.Row="2" Margin="100 0 0 0"/>
+        <Button Content="Добавить" Click="SaveProductButton_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3" Margin="0 20 0 0"/>
+        <Button Content="Назад" Click="BackButton_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="4" Margin="0 50 0 0"/>
+
+    </Grid>
+</Window>
