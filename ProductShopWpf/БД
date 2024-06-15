@@ -1,0 +1,24 @@
+CREATE DATABASE ProductShopWpf;
+
+USE ProductShopWpf;
+
+CREATE TABLE Users(
+Id INT IDENTITY(1,1) PRIMARY KEY,
+Position NVARCHAR(30) NOT NULL,
+Username NVARCHAR(30) NOT NULL,
+Password NVARCHAR(30) NOT NULL
+);
+
+INSERT INTO Users(Position,Username,Password)
+VALUES ('Manager','manager','1234');
+
+USE ProductShopWpf;
+CREATE TABLE Products(
+ProductId INT IDENTITY(1,1) PRIMARY KEY,
+Title NVARCHAR(30) NOT NULL,
+Discription NVARCHAR(50) NOT NULL,
+Price MONEY NOT NULL
+);
+
+INSERT INTO Products(Title,Discription,Price)
+VALUES('T-short','blue','2500');
